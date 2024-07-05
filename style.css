@@ -1,16 +1,38 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    text-align: center;
     margin: 0;
-    padding: 0;
+    font-family: 'Playwrite GB S', sans-serif;
+    background-color: #DDDDDD;
+    color: #F25287;
+    text-align: center;
+}
+
+header {
+    background-color: #F9F3F3;
+    padding: 1rem;
 }
 
 h1 {
-    color: #007bff;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    color: #F25287;
 }
 
-p {
-    font-size: 1.2em;
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F25287;
+    font-weight: bold;
 }
