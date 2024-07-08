@@ -3,21 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>luvligaya</title>
+    <title>Switzerland Diaries</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>luvligaya</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blogs</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <header>
+            <div class="header-image">
+                <img src="header-image.jpg" alt="Header Image">
+            </div>
+            <div class="profile">
+                <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+                <div class="profile-info">
+                    <h1 id="username">RM</h1>
+                    <p id="handle">@rkive</p>
+                    <p id="bio">he/him (1994)<br>born on September 12<br><span>just an archive.</span></p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="diaries">
+                <h2 id="diary-title">Switzerland Diaries</h2>
+                <p id="date">( 24.06.2022 )</p>
+                <div class="content" id="content">
+                    <!-- Content items will be dynamically inserted here -->
+                </div>
+                <form id="uploadForm">
+                    <input type="file" id="fileInput" accept="image/*"><br>
+                    Caption: <input type="text" id="captionInput"><br>
+                    <button type="submit">Upload Image</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
